@@ -1,0 +1,17 @@
+name: "pancreas_S_LDSC"
+output_dir: ../docs
+navbar:
+  title: "pancreas_S_LDSC"
+  left:
+  - text: Home
+    href: index.html
+  - text: About
+    href: about.html
+  - text: License
+    href: license.html
+output:
+  workflowr::wflow_html:
+    toc: yes
+    toc_float: yes
+    theme: cosmo
+    highlight: textmate
