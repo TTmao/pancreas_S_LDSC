@@ -1,0 +1,138 @@
+---
+title: "ldsc_analysis"
+author: "Chenwei Tang"
+date: "2021-09-22"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Prepare GWAS sumstats using `munge_sumstats.py`. [Code](code/gwas_ldsc_format.sh):
+
+```{bash,eval=FALSE}
+#!/bin/bash
+
+module load python
+
+conda activate ldsc
+
+dir_GWAS_ldsc_format="/home/chenweit/Desktop/pancreas_S_LDSC/output/ld_format/"
+
+cd ${dir_GWAS_ldsc_format}
+
+for factor in f1 f2 f3
+do
+	file_name="/home/chenweit/Desktop/pancreas_S_LDSC/data/${factor}.tsv.gz"
+	zless ${file_name} | head
+	python $HOME/Desktop/ldsc/munge_sumstats.py \
+	--sumstats ${file_name} \
+	--merge-alleles $HOME/Desktop/pancreas_S_LDSC/w_hm3.snplist \
+	--N 24925 \
+	--chunksize 500000 \
+	--out ${dir_GWAS_ldsc_format}/${factor}
+
+	zcat ${dir_GWAS_ldsc_format}/${factor}.sumstats.gz | awk '$2!=""' | gzip > ${dir_GWAS_ldsc_format}/${factor}.cleaned.sumstats.gz
+	mv ${dir_GWAS_ldsc_format}/${factor}.cleaned.sumstats.gz ${dir_GWAS_ldsc_format}/${factor}.sumstats.gz
+done
+```
+
+Results saved at `/data`
+## Compute LD scores
+
+### Generate annot.gz files using .bed files.([Code](code/make_ldsc_binary_annot.R))
+
+### Compute LD scores using the annot files. [Code](code/ldsc_binary_annot_QTL.sbatch)
+
+```{bash,eval=FALSE}
+#!/bin/bash
+
+#SBATCH --job-name=ldsc_annot
+#SBATCH --output=/home/chenweit/Desktop/pancreas_S_LDSC/output/ldscore_log/ldsc_annot_%J.out
+#SBATCH --error=/home/chenweit/Desktop/pancreas_S_LDSC/output/ldscore_log/ldsc_annot_%J.err
+#SBATCH --partition=broadwl
+#SBATCH --mem=10G
+
+## Compute annotation-specific LD scores
+## https://github.com/bulik/ldsc/wiki/LD-Score-Estimation-Tutorial
+
+prefix_annot=$1
+
+echo "prefix_annot: ${prefix_annot}"
+
+dir_LDSC=$HOME/Desktop/pancreas_S_LDSC/data
+dir_LDSCORE=$HOME/Desktop/ldsc
+
+mkdir -p ${dir_LDSCORE}/annot/ldscores/${prefix_annot}
+
+source activate ldsc
+
+module load R/3.5.1
+module load python
+
+cd ${dir_LDSCORE}/annot/ldscores/
+
+for chrom in {1..22}
+do
+  echo ${chrom}
+
+  ## Step 1: Creating an annot file
+  echo "Make ldsc-friendly annotation files for ${prefix_annot}.bed"
+  Rscript ~/Desktop/pancreas_S_LDSC/code/make_ldsc_binary_annot.R \
+  ${dir_LDSC}/annot/ENCODE/hg19/${prefix_annot}.bed \
+  ${dir_LDSCORE}/1000G_EUR_Phase3_plink/1000G.EUR.QC.${chrom}.bim \
+  ${dir_LDSC}/annot/ldscores/${prefix_annot}/${prefix_annot}.${chrom}.annot.gz "full-annot"
+
+  ## Step 2: Computing LD scores with an annot file
+  echo "Computing LD scores with the annot file ${prefix_annot}.${chrom}.annot.gz"
+  python $HOME/Desktop/ldsc/ldsc.py \
+  --l2 \
+  --bfile ${dir_LDSCORE}/1000G_EUR_Phase3_plink/1000G.EUR.QC.${chrom} \
+  --print-snps ${dir_LDSCORE}/listHM3.txt \
+  --ld-wind-cm 1 \
+  --annot ${dir_LDSCORE}/annot/ldscores/${prefix_annot}/${prefix_annot}.${chrom}.annot.gz \
+  --out ${dir_LDSCORE}/annot/ldscores/${prefix_annot}/${prefix_annot}.${chrom}
+
+done
+```
+Use [this](code/ldscore.sh) to submit sbatch for all 8 annots.
+
+## Partition heritability estimation
+
+[sldsc_annot_baselineLD_separate.sbatch](code/sldsc_annot_baselineLD_separate.sbatch)
+
+```{bash,eval=FALSE}
+#!/bin/bash
+
+#SBATCH --job-name=sldsc
+#SBATCH --output=/home/chenweit/Desktop/pancreas_S_LDSC/output/sldsc_log/sldsc_%J.out
+#SBATCH --error=/home/chenweit/Desktop/pancreas_S_LDSC/output/sldsc_log/sldsc_%J.err
+#SBATCH --partition=broadwl
+#SBATCH --mem=10G
+
+dir_GWAS=$1
+trait=$2
+prefix_annot=$3
+dir_sLDSC_output=$4
+
+dir_LDSC=$HOME/Desktop/ldsc
+dir_ldsc_annot=$HOME/Desktop/pancreas_S_LDSC/annot/ldscores
+dir_baselineLD=/$HOME/Desktop/ldsc/1000G_Phase3_baselineLD_v2.2_ldscores
+
+echo "Factor: ${trait}"
+
+module load python
+source activate ldsc
+
+dir_out=${dir_sLDSC_output}/${trait}_${prefix_annot}/baselineLDv2.2
+mkdir -p ${dir_out}
+
+python $HOME/Desktop/ldsc/ldsc.py \
+--h2 ${dir_GWAS}/${trait}.sumstats.gz \
+--ref-ld-chr ${dir_baselineLD}/baselineLD.,${dir_ldsc_annot}/${prefix_annot}/${prefix_annot}. \
+--frqfile-chr ${dir_LDSC}/LDSCORE/1000G_Phase3_frq/1000G.EUR.QC. \
+--w-ld-chr ${dir_LDSC}/LDSCORE/1000G_Phase3_weights_hm3_no_MHC/weights.hm3_noMHC. \
+--overlap-annot --print-cov --print-coefficients --print-delete-vals \
+--out ${dir_out}/${prefix_annot}_baselineLDv2.2
+```
+
+Use [this](code/run_sldsc.sh) to submit sbatch. Results saved at `output/sldsc_result`.

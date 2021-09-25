@@ -1,0 +1,14 @@
+#!/bin/bash
+
+dir_GWAS_ldsc_format="/project2/xinhe/shared_data/gwas_factor/ldsc_format/"
+file_name="/project2/xinhe/shared_data/gwas_factor/f2.tsv.gz"
+
+cd $(dir_GWAS_ldsc_format)
+zless ${filename_GWAS_ldsc} | head
+
+python $HOME/Desktop/ldsc/munge_sumstats.py \
+--sumstats ${filename_GWAS_ldsc} \
+--merge-alleles $HOME/Desktop/pancreas_S_LDSC/w_hm3.snplist \
+--N 24925 \
+--chunksize 500000 \
+--out ${dir_GWAS_ldsc_format}/f2

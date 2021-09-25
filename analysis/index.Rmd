@@ -1,6 +1,7 @@
 ---
-title: "Home"
+title: "Enrichment analysis based on S-LDSC"
 site: workflowr::wflow_site
+author: Chenwei Tang
 output:
   workflowr::wflow_html:
     toc: false
@@ -8,4 +9,57 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Based on [GWAS PC annotation](https://ttmao.github.io/GWAS_factor/) results, we are interested in the fact that factor 2 is enriched in pancreatic expression. This subsequent project aims at strengthening this analysis using [S-LDSC](https://kevinlkx.github.io/analysis_pipelines/sldsc_pipeline.html).
+
+## Methods
+
+1. Install and setup LDSC software according to [this](https://github.com/bulik/ldsc)
+
+2. Download LDSC reference data
+* 1000G Phase3 baselineLD model v2.2 (according to README in wiki page)
+
+```{}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_baselineLD_v2.2_ldscores.tgz
+mkdir 1000G_Phase3_baselineLD_v2.2_ldscores
+tar -xvzf 1000G_Phase3_baselineLD_v2.2_ldscores.tgz -C 1000G_Phase3_baselineLD_v2.2_ldscores
+rm 1000G_Phase3_baselineLD_v2.2_ldscores.tgz
+```
+* Regression weights
+```{bash,eval=FALSE}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_weights_hm3_no_MHC.tgz
+tar -xvzf 1000G_Phase3_weights_hm3_no_MHC.tgz
+rm 1000G_Phase3_weights_hm3_no_MHC.tgz
+```
+
+* Allele frequencies
+```{bash,eval=FALSE}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_frq.tgz
+tar -xvzf 1000G_Phase3_frq.tgz
+rm 1000G_Phase3_frq.tgz
+
+```
+* Download 1000 genomes reference genotypes at HapMap3 loci
+```{bash,eval=FALSE}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1000G_Phase3_plinkfiles.tgz
+tar -xvzf 1000G_Phase3_plinkfiles.tgz
+rm 1000G_Phase3_plinkfiles.tgz
+```
+
+* Download HapMap3 SNPs
+```{bash,eval=FALSE}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/hapmap3_snps.tgz
+tar -xvzf hapmap3_snps.tgz
+rm hapmap3_snps.tgz
+```
+
+* A concatenated list of HapMap3 SNPs
+```{bash,eval=FALSE}
+wget https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2
+bzip2 -d w_hm3.snplist.bz2
+
+
+# Extract the list of HapMap 3 SNPs rsIDs
+awk '{if ($1!="SNP") {print $1} }' w_hm3.snplist > listHM3.txt
+
+```
+3. [LDSC analysis](ldsc_analysis.html)

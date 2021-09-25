@@ -1,0 +1,1409 @@
+prefix_annot: liver_DHS_ENCFF286LYP
+1
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.1.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:00:58 2021
+Read list of 779354 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.bim
+Read 1 annotations for 779354 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.bed
+After filtering, 779354 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 98642 SNPs will be printed.
+Writing LD Scores for 98642 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.1.l2.ldscore.gz
+         MAF       L2
+mean  0.2346   0.7511
+std   0.1432   1.4140
+min   0.0051  -0.2111
+25%   0.1084   0.0446
+50%   0.2239   0.2353
+75%   0.3558   0.9072
+max   0.5000  48.9927
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0566
+L2   0.0566  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    6423
+
+Summary of Annotation Matrix Row Sums
+count    779354.0000
+mean          0.0082
+std           0.0904
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:05:34 2021
+Total time elapsed: 4.0m:36.47s
+2
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.2.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.2 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:05:50 2021
+Read list of 839590 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.2.bim
+Read 1 annotations for 839590 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.2.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.2.bed
+After filtering, 839590 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 99735 SNPs will be printed.
+Writing LD Scores for 99735 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.2.l2.ldscore.gz
+         MAF       L2
+mean  0.2384   0.6833
+std   0.1431   1.4431
+min   0.0051  -0.1005
+25%   0.1125   0.0297
+50%   0.2290   0.1727
+75%   0.3620   0.7498
+max   0.5000  35.4173
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0595
+L2   0.0595  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    6075
+
+Summary of Annotation Matrix Row Sums
+count    839590.0000
+mean          0.0072
+std           0.0848
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:11:27 2021
+Total time elapsed: 5.0m:36.85s
+3
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.3.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.3 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:11:42 2021
+Read list of 706350 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.3.bim
+Read 1 annotations for 706350 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.3.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.3.bed
+After filtering, 706350 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 83036 SNPs will be printed.
+Writing LD Scores for 83036 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.3.l2.ldscore.gz
+         MAF       L2
+mean  0.2408   0.6371
+std   0.1426   1.4282
+min   0.0051  -0.1636
+25%   0.1166   0.0184
+50%   0.2321   0.1159
+75%   0.3630   0.6121
+max   0.5000  26.2929
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0653
+L2   0.0653  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3841
+
+Summary of Annotation Matrix Row Sums
+count    706350.0000
+mean          0.0054
+std           0.0735
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:17:08 2021
+Total time elapsed: 5.0m:26.4s
+4
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.4.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.4 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:17:23 2021
+Read list of 729645 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.4.bim
+Read 1 annotations for 729645 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.4.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.4.bed
+After filtering, 729645 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 74924 SNPs will be printed.
+Writing LD Scores for 74924 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.4.l2.ldscore.gz
+         MAF       L2
+mean  0.2375   0.4975
+std   0.1422   1.9126
+min   0.0051  -0.2193
+25%   0.1125   0.0111
+50%   0.2301   0.0753
+75%   0.3579   0.3710
+max   0.5000  39.8957
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0519
+L2   0.0519  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2605
+
+Summary of Annotation Matrix Row Sums
+count    729645.0000
+mean          0.0036
+std           0.0596
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:22:32 2021
+Total time elapsed: 5.0m:8.67s
+5
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.5.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.5 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:22:45 2021
+Read list of 633015 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.5.bim
+Read 1 annotations for 633015 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.5.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.5.bed
+After filtering, 633015 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 75164 SNPs will be printed.
+Writing LD Scores for 75164 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.5.l2.ldscore.gz
+         MAF       L2
+mean  0.2369   0.5306
+std   0.1421   1.1620
+min   0.0051  -0.0942
+25%   0.1125   0.0243
+50%   0.2280   0.1237
+75%   0.3569   0.5397
+max   0.5000  24.6415
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0682
+L2   0.0682  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3233
+
+Summary of Annotation Matrix Row Sums
+count    633015.0000
+mean          0.0051
+std           0.0713
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:27:22 2021
+Total time elapsed: 4.0m:36.17s
+6
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.6.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:27:35 2021
+Read list of 664016 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bim
+Read 1 annotations for 664016 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bed
+After filtering, 664016 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 75358 SNPs will be printed.
+Writing LD Scores for 75358 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.6.l2.ldscore.gz
+         MAF       L2
+mean  0.2357   0.8768
+std   0.1431   2.5004
+min   0.0051  -0.1065
+25%   0.1104   0.0395
+50%   0.2249   0.1755
+75%   0.3579   0.7111
+max   0.5000  40.9308
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0095
+L2   0.0095  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    4500
+
+Summary of Annotation Matrix Row Sums
+count    664016.0000
+mean          0.0068
+std           0.0820
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:34:09 2021
+Total time elapsed: 6.0m:33.15s
+7
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.7.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.7 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:34:22 2021
+Read list of 589569 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.7.bim
+Read 1 annotations for 589569 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.7.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.7.bed
+After filtering, 589569 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 66171 SNPs will be printed.
+Writing LD Scores for 66171 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.7.l2.ldscore.gz
+         MAF       L2
+mean  0.2390   0.6923
+std   0.1428   1.5994
+min   0.0051  -0.1044
+25%   0.1125   0.0271
+50%   0.2301   0.1415
+75%   0.3609   0.6625
+max   0.5000  26.5363
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0653
+L2   0.0653  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3502
+
+Summary of Annotation Matrix Row Sums
+count    589569.0000
+mean          0.0059
+std           0.0768
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:38:35 2021
+Total time elapsed: 4.0m:13.54s
+8
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.8.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.8 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:38:47 2021
+Read list of 549971 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.8.bim
+Read 1 annotations for 549971 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.8.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.8.bed
+After filtering, 549971 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 64975 SNPs will be printed.
+Writing LD Scores for 64975 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.8.l2.ldscore.gz
+         MAF       L2
+mean  0.2380   0.6857
+std   0.1431   1.6105
+min   0.0051  -0.1021
+25%   0.1115   0.0259
+50%   0.2280   0.1301
+75%   0.3609   0.5979
+max   0.5000  21.3038
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.1155
+L2   0.1155  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3082
+
+Summary of Annotation Matrix Row Sums
+count    549971.0000
+mean          0.0056
+std           0.0746
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:43:00 2021
+Total time elapsed: 4.0m:13.09s
+9
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.9.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:43:10 2021
+Read list of 438106 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.bim
+Read 1 annotations for 438106 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.bed
+After filtering, 438106 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 55464 SNPs will be printed.
+Writing LD Scores for 55464 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.9.l2.ldscore.gz
+         MAF       L2
+mean  0.2359   0.7075
+std   0.1423   1.7570
+min   0.0051  -0.0767
+25%   0.1115   0.0212
+50%   0.2249   0.1447
+75%   0.3569   0.6736
+max   0.5000  28.4254
+
+MAF/LD Score Correlation Matrix
+       MAF     L2
+MAF  1.000  0.061
+L2   0.061  1.000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3389
+
+Summary of Annotation Matrix Row Sums
+count    438106.0000
+mean          0.0077
+std           0.0876
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:45:40 2021
+Total time elapsed: 2.0m:30.06s
+10
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.10.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.10 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:45:50 2021
+Read list of 510501 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.10.bim
+Read 1 annotations for 510501 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.10.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.10.bed
+After filtering, 510501 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 64067 SNPs will be printed.
+Writing LD Scores for 64067 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.10.l2.ldscore.gz
+         MAF       L2
+mean  0.2328   0.9274
+std   0.1426   1.9708
+min   0.0051  -0.2221
+25%   0.1074   0.0367
+50%   0.2198   0.2251
+75%   0.3538   0.9555
+max   0.5000  26.8257
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0417
+L2   0.0417  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    4799
+
+Summary of Annotation Matrix Row Sums
+count    510501.0000
+mean          0.0094
+std           0.0965
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:49:16 2021
+Total time elapsed: 3.0m:25.35s
+11
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.11.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.11 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:49:26 2021
+Read list of 493922 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.11.bim
+Read 1 annotations for 493922 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.11.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.11.bed
+After filtering, 493922 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 60977 SNPs will be printed.
+Writing LD Scores for 60977 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.11.l2.ldscore.gz
+         MAF       L2
+mean  0.2398   0.7714
+std   0.1420   1.3670
+min   0.0051  -0.0900
+25%   0.1155   0.0379
+50%   0.2301   0.2206
+75%   0.3609   0.9390
+max   0.5000  17.8567
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0591
+L2   0.0591  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3963
+
+Summary of Annotation Matrix Row Sums
+count    493922.0000
+mean          0.0080
+std           0.0892
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:53:48 2021
+Total time elapsed: 4.0m:21.73s
+12
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.12.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:53:58 2021
+Read list of 480110 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.bim
+Read 1 annotations for 480110 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.bed
+After filtering, 480110 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 58543 SNPs will be printed.
+Writing LD Scores for 58543 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.12.l2.ldscore.gz
+         MAF       L2
+mean  0.2334   0.5307
+std   0.1429   0.9597
+min   0.0051  -0.0950
+25%   0.1084   0.0358
+50%   0.2209   0.1543
+75%   0.3558   0.6136
+max   0.5000  15.7218
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0634
+L2   0.0634  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2643
+
+Summary of Annotation Matrix Row Sums
+count    480110.0000
+mean          0.0055
+std           0.0740
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:57:19 2021
+Total time elapsed: 3.0m:21.44s
+13
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.13.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.13 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:57:28 2021
+Read list of 366200 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.13.bim
+Read 1 annotations for 366200 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.13.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.13.bed
+After filtering, 366200 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 45546 SNPs will be printed.
+Writing LD Scores for 45546 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.13.l2.ldscore.gz
+         MAF       L2
+mean  0.2338   0.3703
+std   0.1428   1.0148
+min   0.0051  -0.1485
+25%   0.1074   0.0075
+50%   0.2209   0.0532
+75%   0.3548   0.2789
+max   0.5000  19.1635
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0416
+L2   0.0416  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    1563
+
+Summary of Annotation Matrix Row Sums
+count    366200.0000
+mean          0.0043
+std           0.0652
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 22:59:51 2021
+Total time elapsed: 2.0m:23.13s
+14
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.14.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 22:59:59 2021
+Read list of 324698 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.bim
+Read 1 annotations for 324698 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.bed
+After filtering, 324698 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 39484 SNPs will be printed.
+Writing LD Scores for 39484 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.14.l2.ldscore.gz
+         MAF       L2
+mean  0.2321   0.6441
+std   0.1424   1.2040
+min   0.0051  -0.0961
+25%   0.1074   0.0275
+50%   0.2198   0.1632
+75%   0.3507   0.7706
+max   0.5000  23.1054
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0614
+L2   0.0614  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2461
+
+Summary of Annotation Matrix Row Sums
+count    324698.0000
+mean          0.0076
+std           0.0867
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:02:05 2021
+Total time elapsed: 2.0m:6.22s
+15
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.15.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.15 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:02:13 2021
+Read list of 287001 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.15.bim
+Read 1 annotations for 287001 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.15.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.15.bed
+After filtering, 287001 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 35839 SNPs will be printed.
+Writing LD Scores for 35839 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.15.l2.ldscore.gz
+         MAF       L2
+mean  0.2379   0.8136
+std   0.1441   1.5130
+min   0.0051  -0.1126
+25%   0.1104   0.0380
+50%   0.2270   0.2551
+75%   0.3640   0.9970
+max   0.5000  32.0119
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0669
+L2   0.0669  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2543
+
+Summary of Annotation Matrix Row Sums
+count    287001.0000
+mean          0.0089
+std           0.0937
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:03:49 2021
+Total time elapsed: 1.0m:36.24s
+16
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.16.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:03:57 2021
+Read list of 316981 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bim
+Read 1 annotations for 316981 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bed
+After filtering, 316981 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 36526 SNPs will be printed.
+Writing LD Scores for 36526 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.16.l2.ldscore.gz
+         MAF       L2
+mean  0.2389   0.7411
+std   0.1426   1.4750
+min   0.0051  -0.1453
+25%   0.1145   0.0185
+50%   0.2311   0.1549
+75%   0.3599   0.8210
+max   0.5000  20.1505
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0167
+L2   0.0167  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2646
+
+Summary of Annotation Matrix Row Sums
+count    316981.0000
+mean          0.0083
+std           0.0910
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:05:44 2021
+Total time elapsed: 1.0m:46.93s
+17
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.17.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.17 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:05:51 2021
+Read list of 269222 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.17.bim
+Read 1 annotations for 269222 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.17.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.17.bed
+After filtering, 269222 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 32218 SNPs will be printed.
+Writing LD Scores for 32218 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.17.l2.ldscore.gz
+         MAF       L2
+mean  0.2428   1.0736
+std   0.1444   1.7623
+min   0.0051  -0.1255
+25%   0.1145   0.0571
+50%   0.2352   0.3674
+75%   0.3681   1.3399
+max   0.5000  26.3353
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.1363
+L2   0.1363  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3045
+
+Summary of Annotation Matrix Row Sums
+count    269222.0000
+mean          0.0113
+std           0.1057
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:07:11 2021
+Total time elapsed: 1.0m:19.54s
+18
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.18.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.18 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:07:18 2021
+Read list of 285156 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.18.bim
+Read 1 annotations for 285156 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.18.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.18.bed
+After filtering, 285156 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 35513 SNPs will be printed.
+Writing LD Scores for 35513 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.18.l2.ldscore.gz
+         MAF       L2
+mean  0.2364   0.4274
+std   0.1423   0.9783
+min   0.0051  -0.1035
+25%   0.1115   0.0104
+50%   0.2260   0.0790
+75%   0.3569   0.4098
+max   0.5000  16.4154
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0274
+L2   0.0274  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    1522
+
+Summary of Annotation Matrix Row Sums
+count    285156.0000
+mean          0.0053
+std           0.0729
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:08:47 2021
+Total time elapsed: 1.0m:28.51s
+19
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.19.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:08:53 2021
+Read list of 232363 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.bim
+Read 1 annotations for 232363 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.bed
+After filtering, 232363 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 22509 SNPs will be printed.
+Writing LD Scores for 22509 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.19.l2.ldscore.gz
+         MAF       L2
+mean  0.2384   1.3565
+std   0.1420   2.1059
+min   0.0051  -0.1277
+25%   0.1145   0.2343
+50%   0.2342   0.7755
+75%   0.3569   1.7689
+max   0.5000  33.7500
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0963
+L2   0.0963  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    3403
+
+Summary of Annotation Matrix Row Sums
+count    232363.0000
+mean          0.0146
+std           0.1201
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:10:14 2021
+Total time elapsed: 1.0m:20.82s
+20
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.20.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:10:20 2021
+Read list of 221626 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20.bim
+Read 1 annotations for 221626 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.20.bed
+After filtering, 221626 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 31101 SNPs will be printed.
+Writing LD Scores for 31101 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.20.l2.ldscore.gz
+         MAF       L2
+mean  0.2344   0.8165
+std   0.1427   1.8994
+min   0.0051  -0.0633
+25%   0.1074   0.0320
+50%   0.2229   0.1883
+75%   0.3558   0.8534
+max   0.5000  26.6718
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0502
+L2   0.0502  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2253
+
+Summary of Annotation Matrix Row Sums
+count    221626.0000
+mean          0.0102
+std           0.1003
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:11:23 2021
+Total time elapsed: 1.0m:3.61s
+21
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.21.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.21 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:11:28 2021
+Read list of 138712 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.21.bim
+Read 1 annotations for 138712 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.21.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.21.bed
+After filtering, 138712 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 17040 SNPs will be printed.
+Writing LD Scores for 17040 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.21.l2.ldscore.gz
+         MAF       L2
+mean  0.2420   0.8292
+std   0.1414   1.9883
+min   0.0051  -0.0710
+25%   0.1186   0.0105
+50%   0.2321   0.1042
+75%   0.3650   0.7073
+max   0.5000  21.8624
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0641
+L2   0.0641  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    1312
+
+Summary of Annotation Matrix Row Sums
+count    138712.0000
+mean          0.0095
+std           0.0968
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:12:05 2021
+Total time elapsed: 36.53s
+22
+Make ldsc-friendly annotation files for liver_DHS_ENCFF286LYP.bed
+LDSC annotation file saved at:  /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22.annot.gz 
+Computing LD scores with the annot file liver_DHS_ENCFF286LYP.22.annot.gz
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt \
+--ld-wind-cm 1.0 \
+--out /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22 \
+--bfile /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.22 \
+--annot /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22.annot.gz \
+--l2  
+
+Beginning analysis at Thu Sep 23 23:12:10 2021
+Read list of 141123 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.22.bim
+Read 1 annotations for 141123 SNPs from /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22.annot.gz
+Read list of 489 individuals from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.22.fam
+Reading genotypes from /home/chenweit/Desktop/pancreas_S_LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.22.bed
+After filtering, 141123 SNPs remain
+Estimating LD Score.
+Reading list of 1217311 SNPs for which to print LD Scores from /home/chenweit/Desktop/pancreas_S_LDSC/listHM3.txt
+After merging with --print-snps, LD Scores for 17489 SNPs will be printed.
+Writing LD Scores for 17489 SNPs to /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22.l2.ldscore.gz
+
+Summary of LD Scores in /home/chenweit/Desktop/pancreas_S_LDSC/annot/ldscores/liver_DHS_ENCFF286LYP/liver_DHS_ENCFF286LYP.22.l2.ldscore.gz
+         MAF       L2
+mean  0.2366   1.4188
+std   0.1435   2.2029
+min   0.0051  -0.1305
+25%   0.1094   0.1287
+50%   0.2280   0.6259
+75%   0.3579   1.9274
+max   0.5000  28.5472
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0565
+L2   0.0565  1.0000
+
+Annotation Correlation Matrix
+       ANNOT
+ANNOT    1.0
+
+Annotation Matrix Column Sums
+ANNOT    2425
+
+Summary of Annotation Matrix Row Sums
+count    141123.0000
+mean          0.0172
+std           0.1300
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Sep 23 23:12:48 2021
+Total time elapsed: 38.36s
