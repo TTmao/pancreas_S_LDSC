@@ -16,13 +16,13 @@ module load python
 
 conda activate ldsc
 
-dir_GWAS_ldsc_format="/home/chenweit/Desktop/pancreas_S_LDSC/output/ld_format/"
+dir_GWAS_ldsc_format="/output/ld_format/"
 
 cd ${dir_GWAS_ldsc_format}
 
 for factor in f1 f2 f3
 do
-	file_name="/home/chenweit/Desktop/pancreas_S_LDSC/data/${factor}.tsv.gz"
+	file_name="/data/${factor}.tsv.gz"
 	zless ${file_name} | head
 	python $HOME/Desktop/ldsc/munge_sumstats.py \
 	--sumstats ${file_name} \
