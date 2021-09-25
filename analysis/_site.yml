@@ -1,7 +1,7 @@
-name: "pancreas_S_LDSC"
+name: pancreas_S_LDSC
 output_dir: ../docs
 navbar:
-  title: "pancreas_S_LDSC"
+  title: pancreas_S_LDSC
   left:
   - text: Home
     href: index.html
@@ -9,6 +9,10 @@ navbar:
     href: about.html
   - text: License
     href: license.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/TTmao/pancreas_S_LDSC
 output:
   workflowr::wflow_html:
     toc: yes
