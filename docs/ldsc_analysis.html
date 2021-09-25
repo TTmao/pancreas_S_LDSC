@@ -428,7 +428,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -437,7 +437,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -449,7 +449,7 @@ div.tocify {
 <strong>Last updated:</strong> 2021-09-24
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>pancreas_S_LDSC/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -461,7 +461,7 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <hr>
 </div>
 <div id="checks" class="tab-pane fade">
-<div class="panel-group" id="workflowr-checks">
+<div id="workflowr-checks" class="panel-group">
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
@@ -525,57 +525,28 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongabsolute"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>File paths:</strong> absolute </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
 </p>
 </div>
-<div id="strongFilepathsstrongabsolute" class="panel-collapse collapse">
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
 <div class="panel-body">
-<p>
-Using absolute paths to the files within your workflowr project makes it difficult for you and others to run your code on a different machine. Change the absolute path(s) below to the suggested relative path(s) to make your code more reproducible.
-</p>
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th style="text-align:left;">
-absolute
-</th>
-<th style="text-align:left;">
-relative
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-/home/chenweit/Desktop/pancreas_S_LDSC/output/ld_format/
-</td>
-<td style="text-align:left;">
-output/ld_format
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-/home/chenweit/Desktop/pancreas_S_LDSC/data/<span class="math inline">\({factor}.tsv.gz &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; data/\)</span>{factor}.tsv.gz
-</td>
-</tr>
-</tbody>
-</table>
+<p>Great job! Using relative paths to the files within your workflowr project makes it easier to run your code on other machines.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomTTmaopancreasSLDSCtree837aa3429f818fa5570ae272bcdcb72ba117ffa9targetblank837aa34a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/TTmao/pancreas_S_LDSC/tree/837aa3429f818fa5570ae272bcdcb72ba117ffa9" target="_blank">837aa34</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomTTmaopancreasSLDSCtree8181749ed0622b6e5c05cadd6bbfa98cc907f4fctargetblank8181749a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/TTmao/pancreas_S_LDSC/tree/8181749ed0622b6e5c05cadd6bbfa98cc907f4fc" target="_blank">8181749</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomTTmaopancreasSLDSCtree837aa3429f818fa5570ae272bcdcb72ba117ffa9targetblank837aa34a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomTTmaopancreasSLDSCtree8181749ed0622b6e5c05cadd6bbfa98cc907f4fctargetblank8181749a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/TTmao/pancreas_S_LDSC/tree/837aa3429f818fa5570ae272bcdcb72ba117ffa9" target="_blank">837aa34</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/TTmao/pancreas_S_LDSC/tree/8181749ed0622b6e5c05cadd6bbfa98cc907f4fc" target="_blank">8181749</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -628,6 +599,40 @@ Message
 <tbody>
 <tr>
 <td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/TTmao/pancreas_S_LDSC/blob/8181749ed0622b6e5c05cadd6bbfa98cc907f4fc/analysis/ldsc_analysis.Rmd" target="_blank">8181749</a>
+</td>
+<td>
+TTmao
+</td>
+<td>
+2021-09-24
+</td>
+<td>
+wflow_publish(“analysis/ldsc_analysis.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/TTmao/pancreas_S_LDSC/bce26e317efa7e3b0a449f52bd3f84066001f8a8/docs/ldsc_analysis.html" target="_blank">bce26e3</a>
+</td>
+<td>
+TTmao
+</td>
+<td>
+2021-09-24
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 html
 </td>
 <td>
@@ -675,13 +680,13 @@ module load python
 
 conda activate ldsc
 
-dir_GWAS_ldsc_format=&quot;/home/chenweit/Desktop/pancreas_S_LDSC/output/ld_format/&quot;
+dir_GWAS_ldsc_format=&quot;/output/ld_format/&quot;
 
 cd ${dir_GWAS_ldsc_format}
 
 for factor in f1 f2 f3
 do
-    file_name=&quot;/home/chenweit/Desktop/pancreas_S_LDSC/data/${factor}.tsv.gz&quot;
+    file_name=&quot;/data/${factor}.tsv.gz&quot;
     zless ${file_name} | head
     python $HOME/Desktop/ldsc/munge_sumstats.py \
     --sumstats ${file_name} \
@@ -819,10 +824,10 @@ other attached packages:
 loaded via a namespace (and not attached):
  [1] Rcpp_1.0.5      rprojroot_2.0.2 digest_0.6.20   later_0.8.0    
  [5] R6_2.4.0        git2r_0.26.1    magrittr_1.5    evaluate_0.14  
- [9] highr_0.8       stringi_1.4.3   fs_1.3.1        promises_1.0.1 
-[13] whisker_0.3-2   rmarkdown_1.13  tools_3.6.1     stringr_1.4.0  
-[17] glue_1.3.1      httpuv_1.5.1    xfun_0.8        yaml_2.2.0     
-[21] compiler_3.6.1  htmltools_0.3.6 knitr_1.23     </code></pre>
+ [9] stringi_1.4.3   fs_1.3.1        promises_1.0.1  whisker_0.3-2  
+[13] rmarkdown_1.13  tools_3.6.1     stringr_1.4.0   glue_1.3.1     
+[17] httpuv_1.5.1    xfun_0.8        yaml_2.2.0      compiler_3.6.1 
+[21] htmltools_0.3.6 knitr_1.23     </code></pre>
 </div>
 </div>
 
