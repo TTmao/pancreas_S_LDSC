@@ -1,0 +1,193 @@
+---
+title: "Result"
+author: "TTmao"
+date: "2021-09-24"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Extract and plot S-LDSC enrichment results
+
+```{r}
+annot_list <- c("liver_DHS_ENCFF286LYP","liver_H3K4me1_ENCFF323TFF","liver_H3K4me3_ENCFF445TVA","liver_H3K27ac_ENCFF234QOT","pancreas_DHS_ENCFF897PRD","pancreas_H3K4me1_ENCFF668HLF","pancreas_H3K4me3_ENCFF340YEE","pancreas_H3K27ac_ENCFF583QFI")
+trait_name_list <- c("f1", "f2", "f3")
+```
+
+```{r}
+library(ggplot2)
+library(foreach)
+library(doParallel)
+```
+
+
+```{r}
+## Plot enrichment
+ggplot_enrichment <- function(result_sLDSC, xlim = NULL, title = "Enrichment"){
+  
+  Enrichment <- result_sLDSC$Enrichment
+  Enrichment_CI_L <- result_sLDSC$Enrichment - 1.96*result_sLDSC$Enrichment_std_error
+  Enrichment_CI_H <- result_sLDSC$Enrichment + 1.96*result_sLDSC$Enrichment_std_error
+
+  ## truncate at 1
+  Enrichment[Enrichment < 1] <- 1
+  Enrichment_CI_L[Enrichment_CI_L < 1] <- 1
+  Enrichment_CI_H[Enrichment_CI_H < 1] <- 1
+  
+  p <- ggplot(result_sLDSC, aes(x = Enrichment, y = Category, colour = Color))+
+    geom_point()+
+    xlab("Enrichment")+
+    ggtitle(title)+
+    geom_errorbarh(aes(xmin = Enrichment - 1.96*Enrichment_std_error, 
+                       xmax = Enrichment + 1.96*Enrichment_std_error, height = 0.1))+ 
+    facet_wrap(Factor~.,ncol = 3)+
+    theme_bw()  + 
+    geom_vline(xintercept = 1,linetype="dotted", colour = "red")+
+    theme(axis.ticks = element_blank(),  
+          panel.grid.minor = element_blank(), 
+          axis.line = element_line(colour = "black"), 
+          axis.text = element_text(face="bold",size = 12, colour = "black"),
+          axis.title = element_text(face="bold",size = 12),
+          strip.text = element_text(face="bold",size = 12), 
+          panel.spacing.x = unit(0.6,units = "cm"), 
+          axis.title.y = element_blank(), 
+          legend.position = "none", 
+          plot.title = element_text(hjust = 0.5))
+  if(!is.null(xlim)){
+    p <- p + coord_cartesian(xlim = xlim)
+  }
+  print(p)
+}
+
+ggplot_log2_enrichment <- function(result_sLDSC, xlim = NULL, title = "Enrichment"){
+  
+  result_sLDSC$Enrichment_CI_L <- result_sLDSC$Enrichment - 1.96*result_sLDSC$Enrichment_std_error
+  result_sLDSC$Enrichment_CI_H <- result_sLDSC$Enrichment + 1.96*result_sLDSC$Enrichment_std_error
+
+  ## truncate at 1
+  result_sLDSC$Enrichment[result_sLDSC$Enrichment < 1] <- 1
+  result_sLDSC$Enrichment_CI_L[result_sLDSC$Enrichment_CI_L < 1] <- 1
+  result_sLDSC$Enrichment_CI_H[result_sLDSC$Enrichment_CI_H < 1] <- 1
+
+  p <- ggplot(result_sLDSC, aes(x = log2(Enrichment), y = Category, colour = Color))+
+    geom_point()+
+    xlab("log2(Enrichment)")+
+    ggtitle(title)+
+    geom_errorbarh(aes(xmin = log2(Enrichment_CI_L), 
+                       xmax = log2(Enrichment_CI_H), height = 0.1))+ 
+    facet_wrap(Factor~.,ncol = 3)+
+    theme_bw()  + 
+    geom_vline(xintercept = 0,linetype="dotted", colour = "red")+
+    theme(axis.ticks = element_blank(),  
+          panel.grid.minor = element_blank(), 
+          axis.line = element_line(colour = "black"), 
+          axis.text = element_text(face="bold",size = 12, colour = "black"),
+          axis.title = element_text(face="bold",size = 12),
+          strip.text = element_text(face="bold",size = 12), 
+          panel.spacing.x = unit(0.6,units = "cm"), 
+          axis.title.y = element_blank(), 
+          legend.position = "none", 
+          plot.title = element_text(hjust = 0.5))
+  if(!is.null(xlim)){
+    p <- p + coord_cartesian(xlim = xlim)
+  }
+  print(p)
+}
+
+ggplot_heritability <- function(result_sLDSC, xlim = NULL, title = "Heritability"){
+  ## Proportion of heritability
+  p <- ggplot(result_sLDSC, aes(x = Prop._h2*100, y = Category, colour = Color))+
+    geom_point()+
+    xlab("Heritability %")+
+    ggtitle(title)+
+    geom_errorbarh(aes(xmin = (Prop._h2-1.96*Prop._h2_std_error)*100, 
+                       xmax = (Prop._h2+1.96*Prop._h2_std_error)*100, height = 0.1))+ 
+    facet_wrap(Factor~.,ncol = 3)+
+    theme_bw()  + 
+    geom_vline(xintercept = 0,linetype="dotted", colour = "red")+
+    theme(axis.ticks = element_blank(),  
+          panel.grid.minor = element_blank(), 
+          axis.line = element_line(colour = "black"), 
+          axis.text = element_text(face="bold",size = 12, colour = "black"),
+          axis.title = element_text(face="bold",size = 12),
+          strip.text = element_text(face="bold",size = 12), 
+          panel.spacing.x = unit(0.6,units = "cm"), 
+          axis.title.y = element_blank(), 
+          legend.position = "none", 
+          plot.title = element_text(hjust = 0.5))
+  if(!is.null(xlim)){
+    p <- p + coord_cartesian(xlim = xlim)
+  }
+  print(p)
+}
+
+
+## combine S-LDSC enrichment results across traits
+combine_sldsc_traits <- function(trait_name_list, dir_results, baseline){
+  registerDoParallel(cores = 10)
+  
+  result_sLDSC <- foreach(trait = trait_name_list, .combine = rbind)%dopar%{
+    print(paste0(dir_results,"/", trait, "_",annot_list[1], "/", baseline, "/", annot_list[1], "_", baseline, ".results"))
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[1], "/", baseline, "/", annot_list[1], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.LDHS <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.LDHS$Category <- annot_list[1]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[2], "/", baseline, "/", annot_list[2], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.LH3K4M1 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.LH3K4M1$Category <- annot_list[2]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[3], "/", baseline, "/", annot_list[3], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.LH3K4M3 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.LH3K4M3$Category <- annot_list[3]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[4], "/", baseline, "/", annot_list[4], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.LH3K2 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.LH3K2$Category <- annot_list[4]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[5], "/", baseline, "/", annot_list[5], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.PDHS <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.PDHS$Category <- annot_list[5]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[6], "/", baseline, "/", annot_list[6], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.PH3K4M1 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.PH3K4M1$Category <- annot_list[6]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[7], "/", baseline, "/", annot_list[7], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.PH3K4M3 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.PH3K4M3$Category <- annot_list[7]
+    
+    sldsc_results <- read.table(paste0(dir_results,"/", trait, "_",annot_list[8], "/", baseline, "/", annot_list[8], "_", baseline, ".results"), header = T, stringsAsFactors = F)
+    sldsc.PH3K2 <- sldsc_results[sldsc_results$Category == "L2_1",]
+    sldsc.PH3K2$Category <- annot_list[8]
+    
+    sldsc.combined <- rbind(sldsc.LDHS,sldsc.LH3K2,sldsc.LH3K4M1,sldsc.LH3K4M3,sldsc.PDHS,sldsc.PH3K2,sldsc.PH3K4M1,sldsc.PH3K4M3)
+    sldsc.combined <- cbind(Factor = trait, sldsc.combined)
+    sldsc.combined
+  }
+  return(result_sLDSC)
+}
+```
+
+```{r}
+baseline <- "baselineLDv2.2"
+
+dir_results <- "/home/chenweit/Desktop/pancreas_S_LDSC/output/sldsc_result"
+result_sLDSC <- combine_sldsc_traits(trait_name_list, dir_results, baseline)
+
+result_sLDSC$Category <- factor(result_sLDSC$Category, levels = rev(annot_list) )
+result_sLDSC$Color <- factor(result_sLDSC$Category, levels = annot_list)
+```
+
+Enrichment
+
+```{r}
+DT::datatable(format(result_sLDSC[,1:7], digits = 2), options = list(scrollX = TRUE, keys = TRUE, pageLength = length(annot_list)),rownames = F)
+```
+
+```{r}
+ggplot_enrichment(result_sLDSC, title = "", xlim = c(0,50))
+```
+
+```{r}
+ggplot_log2_enrichment(result_sLDSC, title = "")
+```

@@ -13,9 +13,9 @@ Based on [GWAS PC annotation](https://ttmao.github.io/GWAS_factor/) results, we 
 
 ## Methods
 
-1. Install and setup LDSC software according to [this](https://github.com/bulik/ldsc)
+### Install and setup LDSC software according to [this](https://github.com/bulik/ldsc)
 
-2. Download LDSC reference data
+### Download LDSC reference data
 * 1000G Phase3 baselineLD model v2.2 (according to README in wiki page)
 
 ```{}
@@ -62,4 +62,6 @@ bzip2 -d w_hm3.snplist.bz2
 awk '{if ($1!="SNP") {print $1} }' w_hm3.snplist > listHM3.txt
 
 ```
-3. [LDSC analysis](ldsc_analysis.html)
+### [LDSC analysis](ldsc_analysis.html)
+
+### [Results and plotting](result.html)
