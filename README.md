@@ -1,5 +1,3 @@
 # pancreas_S_LDSC
 
-A [workflowr][] project.
-
-[workflowr]: https://github.com/jdblischak/workflowr
+https://ttmao.github.io/pancreas_S_LDSC/
